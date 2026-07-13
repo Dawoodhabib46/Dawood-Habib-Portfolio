@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dawood Habib | Full-Stack Web Developer & WordPress Specialist</title>
+<meta name="description" content="Dawood Habib - Full-Stack Web Developer from Karachi, Pakistan, specializing in PHP, MySQL, WordPress & WooCommerce development. Available for hire.">
+<meta name="keywords" content="Dawood Habib, Full Stack Developer, PHP Developer, WordPress Developer, WooCommerce Developer, Web Developer Karachi Pakistan, MySQL Developer">
+<meta name="author" content="Dawood Habib">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dawoodhabib.dev/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dawood Habib | Full-Stack Web Developer & WordPress Specialist">
+<meta property="og:description" content="Full-Stack Web Developer from Karachi, Pakistan - PHP, MySQL, WordPress & WooCommerce. Available for hire.">
+<meta property="og:url" content="https://dawoodhabib.dev/">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dawood Habib | Full-Stack Web Developer">
+<meta name="twitter:description" content="PHP, MySQL, WordPress & WooCommerce specialist based in Karachi, Pakistan.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dawood Habib",
+  "jobTitle": "Full-Stack Web Developer",
+  "url": "https://dawoodhabib.dev/",
+  "email": "mailto:mddawoodhabib@gmail.com",
+  "telephone": "+92-348-5253492",
+  "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+  "knowsAbout": ["HTML5","CSS3","JavaScript","PHP","MySQL","MariaDB","WordPress","WooCommerce","Bootstrap","jQuery","Git","GitHub","Laravel"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+:root{
+  --bg:#0a0f1f;
+  --bg-alt:#0d1326;
+  --surface:#121a34;
+  --surface-2:#182140;
+  --border:rgba(255,255,255,0.08);
+  --text:#e9edf8;
+  --text-dim:#8f9bc0;
+  --accent:#4d6bff;
+  --accent-2:#22d3ee;
+  --accent-3:#f5b841;
+  --accent-soft:rgba(77,107,255,0.14);
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+section{padding:100px 0;position:relative;}
+.eyebrow{font-family:var(--font-mono);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-2);display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--accent-2);}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-0.5px;}
+h2.section-title{font-size:clamp(28px,4vw,42px);text-align:center;margin-bottom:12px;}
+.section-sub{color:var(--text-dim);max-width:520px;margin:0 auto 50px;font-size:15.5px;text-align:center;}
+
+/* NAV */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 24px;}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;position:relative;}
+.logo-badge{
+  display:flex;flex-direction:column;justify-content:center;line-height:1;
+  font-family:var(--font-display);flex-shrink:0;user-select:none;transition:transform .25s;
+}
+.logo-badge:hover{transform:translateY(-2px);}
+.logo-badge .lg-first{
+  font-size:22px;font-weight:700;letter-spacing:3px;
+  background:linear-gradient(120deg,var(--accent) 0%,var(--accent-2) 55%,var(--accent-3) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.logo-badge .lg-last{
+  font-size:10.5px;font-weight:500;letter-spacing:6px;color:var(--text-dim);
+  margin-top:3px;padding-left:2px;
+}
+.nav-pill{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:999px;
+  padding:8px 8px;
+  display:flex;gap:4px;
+}
+.nav-pill a{
+  padding:10px 20px;border-radius:999px;font-size:14px;font-weight:500;color:var(--text-dim);transition:all .2s;
+}
+.nav-pill a:hover, .nav-pill a.active{background:var(--text);color:var(--bg);}
+.nav-cta{
+  padding:12px 24px;border-radius:999px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#04101f;font-weight:600;font-size:14px;
+  transition:transform .2s;
+}
+.nav-cta:hover{transform:translateY(-2px);}
+.burger{display:none;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--text);font-size:18px;width:44px;height:44px;border-radius:12px;cursor:pointer;}
+@media(max-width:900px){
+  .logo-badge .lg-first{font-size:17px;letter-spacing:2px;}
+  .logo-badge .lg-last{font-size:8.5px;letter-spacing:4px;}
+  .nav-pill{position:fixed;top:78px;left:24px;right:24px;flex-direction:column;background:var(--surface);transform:translateY(-140%);transition:transform .3s;padding:14px;}
+  .nav-pill.open{transform:translateY(0);}
+  .nav-pill a{text-align:center;padding:12px;}
+  .nav-cta{display:none;}
+  .burger{display:block;}
+}
+
+/* HERO */
+.hero{padding-top:190px;padding-bottom:40px;position:relative;overflow:hidden;}
+.curve-wrap{position:absolute;top:60px;left:0;width:100%;height:520px;z-index:0;pointer-events:none;}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;}
+.hero-text .hi{font-family:var(--font-mono);color:var(--accent-3);font-size:14px;margin-bottom:14px;}
+.hero-text .hi span{color:var(--text);font-weight:600;}
+.hero h1{font-size:clamp(32px,4.6vw,50px);line-height:1.12;margin-bottom:18px;}
+.hero p.desc{color:var(--text-dim);max-width:460px;margin-bottom:20px;font-size:15.5px;}
+.role-line{font-family:var(--font-mono);font-size:clamp(15px,1.8vw,18px);color:var(--accent-2);min-height:26px;margin-bottom:22px;display:flex;align-items:center;}
+.role-line .cursor{display:inline-block;width:2px;height:1em;background:var(--accent-2);margin-left:3px;animation:blink 1s step-end infinite;}
+@keyframes blink{50%{opacity:0;}}
+.btn-row{display:flex;gap:14px;margin-bottom:8px;flex-wrap:wrap;}
+.btn{padding:13px 26px;border-radius:999px;font-weight:600;font-size:14px;transition:transform .2s,box-shadow .2s;cursor:pointer;border:1px solid transparent;}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04101f;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(77,107,255,.3);}
+.btn-outline{border-color:var(--border);color:var(--text);}
+.btn-outline:hover{border-color:var(--accent-2);color:var(--accent-2);}
+
+.hero-visual{position:relative;display:flex;justify-content:center;z-index:2;}
+.avatar-wrap{position:relative;width:100%;max-width:380px;}
+.avatar-halo{position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(77,107,255,0.32),transparent 70%);top:52%;left:50%;transform:translate(-50%,-50%);filter:blur(8px);z-index:0;}
+@keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+.avatar-wrap img{animation:floatY 4.5s ease-in-out infinite;}
+
+.tech-row{position:relative;z-index:2;display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:60px;}
+.tech-bubble{
+  width:52px;height:52px;border-radius:50%;
+  background:var(--surface);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;color:var(--text-dim);
+  transition:transform .25s, color .25s, border-color .25s;
+  position:relative;
+}
+.tech-bubble img{width:60%;height:60%;object-fit:contain;}
+.tech-bubble span.txt{font-family:var(--font-mono);font-weight:700;font-size:13px;}
+.tech-bubble:hover{transform:translateY(-6px);color:var(--accent-2);border-color:var(--accent-2);}
+.tech-bubble::before{
+  content:attr(data-tip);
+  position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(4px);
+  background:var(--surface-2);border:1px solid var(--border);color:var(--text);
+  font-family:var(--font-mono);font-size:11.5px;white-space:nowrap;
+  padding:6px 12px;border-radius:8px;
+  opacity:0;pointer-events:none;transition:opacity .2s, transform .2s;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  z-index:5;
+}
+.tech-bubble:hover::before{opacity:1;transform:translateX(-50%) translateY(0);}
+.tech-bubble.learning{opacity:.55;}
+.tech-bubble.learning::after{
+  content:"learning";font-family:var(--font-mono);font-size:8px;letter-spacing:.5px;
+  position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);color:var(--accent-3);white-space:nowrap;
+}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:center;}
+.about-avatar{max-width:300px;margin:0 auto;position:relative;}
+.avail-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--surface-2);border:1px solid var(--border);
+  padding:8px 16px;border-radius:999px;font-size:13px;margin-top:20px;color:var(--text-dim);
+}
+.avail-pill .dot{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:pulse 1.6s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.about-text h2{font-size:clamp(24px,3.2vw,34px);margin-bottom:16px;text-align:left;}
+.about-text p{color:var(--text-dim);font-size:15.5px;margin-bottom:14px;}
+
+/* WORK */
+.work-filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:50px;}
+.work-filters button{
+  padding:10px 22px;border-radius:999px;
+  background:var(--surface);border:1px solid var(--border);
+  color:var(--text-dim);font-size:13.5px;font-weight:500;cursor:pointer;transition:all .2s;
+}
+.work-filters button.active, .work-filters button:hover{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04101f;border-color:transparent;}
+
+.project-carousel{position:relative;display:flex;align-items:center;gap:18px;margin-bottom:56px;}
+.car-arrow{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:var(--surface);border:1px solid var(--border);color:var(--text);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;
+}
+.car-arrow:hover{background:var(--accent-2);color:#04101f;}
+.project-stage{flex-grow:1;overflow:hidden;}
+.project-track{display:flex;transition:transform .45s ease;}
+.project-slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;}
+.project-slide .tag{font-family:var(--font-mono);font-size:12px;color:var(--accent-3);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;}
+.project-slide h3{font-size:22px;margin-bottom:12px;}
+.project-slide p{color:var(--text-dim);font-size:14.5px;margin-bottom:16px;}
+.project-slide .project-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.project-slide .project-tags span{font-family:var(--font-mono);font-size:11px;color:var(--accent-2);border:1px solid rgba(34,211,238,0.3);padding:4px 10px;border-radius:6px;}
+.mockup{
+  background:var(--surface-2);border:1px solid var(--border);border-radius:14px;overflow:hidden;
+}
+.mockup .bar{display:flex;gap:6px;padding:10px 12px;background:var(--bg-alt);}
+.mockup .bar span{width:9px;height:9px;border-radius:50%;}
+.mockup .bar span:nth-child(1){background:#ff5f56;}
+.mockup .bar span:nth-child(2){background:#ffbd2e;}
+.mockup .bar span:nth-child(3){background:#27c93f;}
+.mockup .body{padding:26px 20px;text-align:center;}
+.mockup .body i{font-size:38px;color:var(--accent-2);margin-bottom:10px;}
+.mockup .body p{color:var(--text-dim);font-size:13px;}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:-30px;margin-bottom:50px;}
+.dots button{width:8px;height:8px;border-radius:50%;background:var(--border);border:none;cursor:pointer;padding:0;transition:all .2s;}
+.dots button.active{background:var(--accent-2);width:22px;border-radius:4px;}
+
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.stat-ring{
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:26px;display:flex;align-items:center;gap:18px;
+}
+.ring{
+  width:70px;height:70px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:600;font-size:13px;
+  background:conic-gradient(var(--ring-color) calc(var(--ring-pct) * 1%), rgba(255,255,255,0.08) 0);
+  position:relative;
+}
+.ring::before{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--surface);}
+.ring span{position:relative;z-index:1;}
+.stat-ring .label{font-size:13px;color:var(--text-dim);}
+
+/* CONTACT */
+.contact-section{
+  background:linear-gradient(160deg, var(--bg) 32%, #14204a 32.5%);
+  padding-top:110px;
+}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;}
+.contact-card{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:18px;padding:34px;backdrop-filter:blur(6px);}
+.contact-card h3{font-size:19px;margin-bottom:26px;}
+.contact-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
+.contact-item i{width:38px;height:38px;background:var(--accent-soft);color:var(--accent-2);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-item span{color:var(--text-dim);font-size:13px;display:block;margin-bottom:2px;}
+.contact-item strong{font-size:15px;font-weight:500;}
+.contact-form{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:18px;padding:34px;backdrop-filter:blur(6px);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+.field{display:flex;flex-direction:column;gap:8px;}
+.field label{font-size:13px;color:var(--text-dim);}
+.field input,.field textarea{background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:8px;padding:12px 14px;color:var(--text);font-family:var(--font-body);font-size:14.5px;outline:none;transition:border-color .2s;}
+.field input:focus,.field textarea:focus{border-color:var(--accent-2);}
+.field textarea{resize:vertical;min-height:110px;}
+.hp-field{position:absolute;left:-9999px;opacity:0;}
+.form-status{font-size:13.5px;margin-top:14px;min-height:18px;}
+.form-status.ok{color:#4ade80;}
+.form-status.err{color:#f87171;}
+.contact-outro{text-align:center;color:var(--text-dim);font-size:14.5px;max-width:560px;margin:56px auto 20px;}
+.contact-outro strong{color:var(--text);}
+.contact-socials{display:flex;justify-content:center;gap:16px;margin-bottom:10px;}
+.contact-socials a{width:42px;height:42px;border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--text-dim);transition:all .2s;}
+.contact-socials a:hover{color:var(--accent-2);border-color:var(--accent-2);transform:translateY(-3px);}
+
+footer{padding:30px 0;text-align:center;}
+footer p{color:var(--text-dim);font-size:13px;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.show{opacity:1;transform:translateY(0);}
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;}
+
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr;}
+  .hero-visual{order:-1;margin-bottom:10px;}
+  .about-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .project-slide{grid-template-columns:1fr;}
+  .stats-row{grid-template-columns:1fr;}
+  section{padding:70px 0;}
+  .contact-section{background:linear-gradient(180deg, var(--bg) 18%, #14204a 18.5%);}
+}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001ms !important;transition-duration:.001ms !important;}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo-badge"><span class="lg-first">DAWOOD</span><span class="lg-last">HABIB</span></a>
+    <nav class="nav-pill" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+923485253492" class="nav-cta"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>Call Me</a>
+    <button class="burger" id="burger" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="curve-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1180 520" width="100%" height="100%" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="curveGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#4d6bff" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#22d3ee" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#4d6bff" stop-opacity="0.9"/>
+          </linearGradient>
+          <radialGradient id="curveGlow" cx="50%" cy="55%" r="50%">
+            <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="590" cy="300" rx="230" ry="120" fill="url(#curveGlow)"/>
+        <path d="M -20 40 Q 300 420 590 420 Q 880 420 1200 40" stroke="url(#curveGrad)" stroke-width="3" fill="none" opacity="0.85"/>
+        <path d="M -20 20 Q 300 400 590 400 Q 880 400 1200 20" stroke="#22d3ee" stroke-width="1" fill="none" opacity="0.25"/>
+      </svg>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hi">Hi there! I am <span>Dawood Habib .</span></p>
+        <h1>I am a Full Stack <br>Web Developer.</h1>
+        <div class="role-line"><span id="typewriter"></span><span class="cursor"></span></div>
+        <p class="desc">I am a self-taught developer from Karachi, Pakistan - 21 years old, FSc Pre-Engineering graduate. I develop secure, scalable and fast websites, ranging from custom PHP back-end to fully customized WordPress &amp; WooCommerce store.</p>
+        <div class="btn-row">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-halo" aria-hidden="true"></div>
+          <img src="images/avatar-hero.png" alt="3D illustration of Dawood Habib sitting with a laptop" style="position:relative;z-index:2;width:100%;max-width:380px;display:block;margin:0 auto;filter:drop-shadow(0 20px 30px rgba(0,0,0,.4));">
+        </div>
+      </div>
+    </div>
+
+    <div class="container tech-row">
+      <div class="tech-bubble" data-tip="HTML5"><img src="images/icon-html.png" alt="HTML5"></div>
+      <div class="tech-bubble" data-tip="CSS3"><img src="images/icon-css.png" alt="CSS3"></div>
+      <div class="tech-bubble" data-tip="JavaScript (ES6+)"><img src="images/icon-js.png" alt="JavaScript"></div>
+      <div class="tech-bubble" data-tip="PHP"><img src="images/icon-php.png" alt="PHP"></div>
+      <div class="tech-bubble" data-tip="MySQL"><i class="fa-solid fa-database"></i></div>
+      <div class="tech-bubble" data-tip="MariaDB"><span class="txt">Ma</span></div>
+      <div class="tech-bubble" data-tip="Bootstrap 5"><i class="fa-brands fa-bootstrap"></i></div>
+      <div class="tech-bubble" data-tip="jQuery"><span class="txt">jQ</span></div>
+      <div class="tech-bubble" data-tip="XML"><img src="images/icon-xml.png" alt="XML"></div>
+      <div class="tech-bubble" data-tip="Git"><i class="fa-brands fa-git-alt"></i></div>
+      <div class="tech-bubble" data-tip="GitHub"><i class="fa-brands fa-github"></i></div>
+      <div class="tech-bubble" data-tip="WordPress"><i class="fa-brands fa-wordpress"></i></div>
+      <div class="tech-bubble" data-tip="WooCommerce"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="tech-bubble learning" data-tip="Laravel — currently learning"><img src="images/icon-laravel.png" alt="Laravel"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container reveal">
+    <p class="eyebrow" style="justify-content:center;">About Me / Design &amp; Code,</p>
+    <h2 class="section-title">Bringing ideas to life,</h2>
+    <p class="section-sub">From Pre-Engineering to full-stack development, My journey till now.</p>
+
+    <div class="about-grid">
+      <div class="about-avatar">
+        <img src="images/avatar-about.png" alt="3D illustration of Dawood Habib standing with a laptop" style="width:100%;max-width:280px;display:block;margin:0 auto;filter:drop-shadow(0 18px 26px rgba(0,0,0,.4));">
+        <div style="text-align:center;">
+          <span class="avail-pill"><span class="dot"></span>Looking for New Opportunities.</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>I am Dawood Habib, a Full Stack Web Developer from Karachi Pakistan.</h2>
+        <p>I am 21 years old and have completed my FSc in Pre-Engineering before embarking on my computer science journey  first by learning basics of DIT (MS Office), then moving towards front-end designing and finally landing up in back-end development.</p>
+        <p>During the journey, I mastered the languages such as HTML5, CSS3, JavaScript, PHP, MySQL, MariaDB and Bootstrap 5. I also specialize in WordPress &amp; WooCommerce  custom headers, dynamic menus, and whole client store. Currently, I am learning Laravel.</p>
+        <p>I care about coding standards, security, scalability and mobile first designs. And currently I am looking for a full-time position to continue building products.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="container reveal">
+    <p class="eyebrow" style="justify-content:center;">My Work</p>
+    <h2 class="section-title">Projects that make a difference - here is what I've built.</h2>
+    <p class="section-sub">Three websites, built from scratch for actual use case scenario.</p>
+
+    <div class="work-filters" id="workFilters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="webdesign">Web Designing</button>
+      <button data-filter="webdev">Web Development</button>
+      <button data-filter="cms">CMS Developer</button>
+    </div>
+
+    <div class="project-carousel">
+      <button class="car-arrow" id="prevBtn" aria-label="Previous project"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="project-stage">
+        <div class="project-track" id="projectTrack">
+
+          <div class="project-slide" data-cat="webdev">
+            <div>
+              <p class="tag">Featured Project</p>
+              <h3>SRS Lab Automation</h3>
+              <p>A multi-panel PHP/MySQL web application that replaces paper-based laboratory testing records. Contains three panels (Admin, Tester, User), full CRUD functionality, dashboard and AJAX based contact module.</p>
+              <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap 5</span><span>Role-based Access</span></div>
+            </div>
+            <div class="mockup">
+              <div class="bar"><span></span><span></span><span></span></div>
+              <div class="body"><img src="images/icon-coding.png" alt="Web Development" style="width:64px;height:64px;object-fit:contain;margin:0 auto 10px;"><p>Admin - Tester - User Panels</p></div>
+            </div>
+          </div>
+
+          <div class="project-slide" data-cat="cms">
+            <div>
+              <p class="tag">In Progress</p>
+              <h3>Coza Store</h3>
+              <p>Custom WooCommerce fashion store header, contains sticky announcement bar, full dynamic menu based navigation with auto-fetch categories, mega drop-down menus, two levels menu for mobile devices and live shopping cart badge.</p>
+              <div class="project-tags"><span>WordPress</span><span>WooCommerce</span><span>JavaScript</span><span>AJAX</span></div>
+            </div>
+            <div class="mockup">
+              <div class="bar"><span></span><span></span><span></span></div>
+              <div class="body"><img src="images/icon-ecommerce.png" alt="CMS Development" style="width:64px;height:64px;object-fit:contain;margin:0 auto 10px;"><p>Mega Menu &amp; Header System</p></div>
+            </div>
+          </div>
+
+          <div class="project-slide" data-cat="webdesign">
+            <div>
+              <p class="tag">Featured Project</p>
+              <h3>PowerFit Gym</h3>
+              <p>A dark and gold responsive website of Karachi based Gym Brand - six pages (Home, About, Services, Prices, Blog, Contact). Created using Elementor and custom hero section.</p>
+              <div class="project-tags"><span>WordPress</span><span>Elementor</span><span>UI/UX</span></div>
+            </div>
+            <div class="mockup">
+              <div class="bar"><span></span><span></span><span></span></div>
+              <div class="body"><img src="images/icon-webdesign.png" alt="Web Design" style="width:64px;height:64px;object-fit:contain;margin:0 auto 10px;"><p>Six-Page Gym Website</p></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="car-arrow" id="nextBtn" aria-label="Next project"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="dots" id="dots"></div>
+
+    <div class="stats-row">
+      <div class="stat-ring">
+        <div class="ring" style="--ring-color:#22d3ee;--ring-pct:70;"><span>3+</span></div>
+        <div class="label">Real Websites<br>Delivered</div>
+      </div>
+      <div class="stat-ring">
+        <div class="ring" style="--ring-color:#4d6bff;--ring-pct:90;"><span>13+</span></div>
+        <div class="label">Technologies<br>&amp; Tools</div>
+      </div>
+      <div class="stat-ring">
+        <div class="ring" style="--ring-color:#f5b841;--ring-pct:100;"><span>100%</span></div>
+        <div class="label">Commitment<br>to Every Project</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section reveal">
+    <div class="container">
+      <h2 class="section-title" style="color:#fff;">Contact</h2>
+      <p class="section-sub">Looking for full-time and freelance projects. Contact me anytime.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Contact details</h3>
+          <div class="contact-item"><i class="fa-solid fa-phone"></i><div><span>Phone / WhatsApp</span><strong>+92 348 5253492</strong></div></div>
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong>mddawoodhabib@gmail.com</strong></div></div>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><span>Location</span><strong>Karachi, Pakistan</strong></div></div>
+        </div>
+
+        <form class="contact-form" id="contactForm" autocomplete="on">
+          <input type="text" name="company" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row">
+            <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="cf-email">Email</label><input id="cf-email" type="email" name="email" required autocomplete="email"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="cf-phone">Phone</label><input id="cf-phone" type="tel" name="phone" autocomplete="tel"></div>
+            <div class="field"><label for="cf-address">Address</label><input id="cf-address" type="text" name="address" autocomplete="address-level2"></div>
+          </div>
+          <div class="field" style="margin-bottom:20px;"><label for="cf-message">Message</label><textarea id="cf-message" name="message" required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+
+      <p class="contact-outro">I am currently looking to join a team that cares about standards and makes a difference in the world  or do you have a project in mind?  <strong>Let's connect.</strong></p>
+      <div class="contact-socials">
+        <a href="mailto:mddawoodhabib@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/923485253492" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Dawood Habib. All rights reserved.</p>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+const roles = ["Full-Stack Web Developer.", "WordPress & WooCommerce Specialist.", "PHP / MySQL Developer."];
+const twEl = document.getElementById('typewriter');
+let rIndex = 0, cIndex = 0, deleting = false;
+function typeLoop(){
+  const current = roles[rIndex];
+  if(!deleting){
+    cIndex++; twEl.textContent = current.slice(0, cIndex);
+    if(cIndex === current.length){ deleting = true; setTimeout(typeLoop, 1400); return; }
+  } else {
+    cIndex--; twEl.textContent = current.slice(0, cIndex);
+    if(cIndex === 0){ deleting = false; rIndex = (rIndex + 1) % roles.length; }
+  }
+  setTimeout(typeLoop, deleting ? 40 : 65);
+}
+typeLoop();
+
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('show'); io.unobserve(entry.target); } });
+}, { threshold: 0.1 });
+reveals.forEach(el => io.observe(el));
+
+/* Project carousel */
+const track = document.getElementById('projectTrack');
+const slides = Array.from(track.children);
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const filterBtns = document.querySelectorAll('#workFilters button');
+const dotsWrap = document.getElementById('dots');
+let current = 0;
+let visibleSlides = slides;
+
+function renderDots(){
+  dotsWrap.innerHTML = '';
+  visibleSlides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.setAttribute('aria-label', 'Go to project ' + (i+1));
+    if(i === current) d.classList.add('active');
+    d.addEventListener('click', () => { current = i; renderSlide(); });
+    dotsWrap.appendChild(d);
+  });
+}
+function renderSlide(){
+  slides.forEach(s => s.style.display = 'none');
+  if(visibleSlides.length === 0) return;
+  current = ((current % visibleSlides.length) + visibleSlides.length) % visibleSlides.length;
+  visibleSlides.forEach((s, i) => { if(i === current) s.style.display = 'grid'; });
+  renderDots();
+}
+prevBtn.addEventListener('click', () => { current--; renderSlide(); });
+nextBtn.addEventListener('click', () => { current++; renderSlide(); });
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    visibleSlides = filter === 'all' ? slides : slides.filter(s => s.dataset.cat === filter);
+    current = 0;
+    renderSlide();
+  });
+});
+renderSlide();
+
+/* Contact form */
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  if(form.company.value){ return; }
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+  if(!name || !email || !message){
+    status.textContent = 'Please fill in your name, email and message.';
+    status.className = 'form-status err';
+    return;
+  }
+  const subject = encodeURIComponent('Portfolio inquiry from ' + name);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.phone.value.trim()}\nAddress: ${form.address.value.trim()}\n\nMessage:\n${message}`);
+  window.location.href = `mailto:mddawoodhabib@gmail.com?subject=${subject}&body=${body}`;
+  status.textContent = 'Opening your email app to send this message...';
+  status.className = 'form-status ok';
+});
+</script>
+</body>
+</html>
